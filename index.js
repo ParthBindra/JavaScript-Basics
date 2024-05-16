@@ -113,6 +113,67 @@ console.error("this is an error");
     //DOM manipulation
     let elem= document.getElementById('click');
     console.log(elem);
+    elem.style.background="yellow";
+    console.log(elem.innerHTML);
+    console.log(elem.innerText);
+
+    function clicked(){
+      console.log("the button was clicked")
+    }
+    //events in JS
+
+    document.onload=function(){
+      console.log("the document was loaded")
+    }
+
+    firstContainer.addEventListener('click',function(){
+      console.log("click hua")
+    })
+
+    firstContainer.addEventListener('mouseover',function(){
+      console.log("mouse on conatiner")
+    })
+    firstContainer.addEventListener('mouseout',function(){
+      console.log("mouse out of conatiner")
+    })
+
+    firstContainer.addEventListener('mouseup',function(){
+      console.log("mouse up clicked of conatiner")
+    })
+
+    firstContainer.addEventListener('mousedown',function(){
+      console.log("mouse down clicked of conatiner")
+    })
+
+    //array function
+
+    function sum(a,b){
+      return a+b
+;    }
+//so these can be write as
+summ=(a,b)=>{
+   return a+b;
+}
+
+//settimeout and setinterval
+logKaro=()=>{
+   console.log("i am your log")
+}
+setTimeout(logKaro,2000);
+setInterval(logKaro,2000);
+//to stop these we have to write clearinterval
+
+//Js local storage
+localStorage.setItem('name','harry');
+localStorage.getItem('name');
+//JSON
+//javascript object notation
+obj={name:'harry',lenght:1}
+jso=JSON.stringify(obj);
+console.log(jso)
+// it will change to object to string so that we can easily transport
+//JSON only need double quotes not single quotes
+//json.parse("string")
 
 
 
