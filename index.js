@@ -176,7 +176,232 @@ console.log(jso)
 //json.parse("string")
 
 
+console.log("hello");
+ let car1={name:'Ford', model:'xyz', cc:200};
+ let car2=car1;
+ console.log(car1.name);
 
+car2.model='abc';
+console.log(car1, car2);
+
+let k=5;
+let m =k;
+m=7;
+console.log(k,m);
+//refernce 
+// past by refernce and past by value 
+//objects arrays manipulation
+
+
+
+let arr = [1, 2, 3, 4, 5];
+let arr2 = [];
+
+for (let i = 0; i < arr.length; i++) {
+    arr2.push(arr[i] * 10);
+}
+
+console.log(arr2); 
+
+function f(){
+    alert("ehllo word");
+}
+f();
+
+function myFunction(a,b) {
+    return (a*b*10);
+  }
+  console.log(myFunction(6,7));
+
+  const Parth={Name:"ar",Age:20,contact:"null"
+  }
+  console.log(Parth.Name);
+  Parth.Name="las";
+  console.log(Parth);
+  Parth.Age=201;
+  console.log(Parth.Age*10);
+  delete Parth["ar"];
+ Parth.Name=function(){
+    return("hello world");
+ }
+console.log(Parth.Name.toUppercase())
+
+const person = {
+    name: "John",
+    age: 30,
+    city: "New York"
+  };
+  
+  // Create an Array
+  const myArray = Object.values(person);
+  
+  
+  // Display the Array
+console.log(typeof(myArray));
+console.log(typeof(JSON.stringify(myArray)));
+
+
+let text ="abcde    fhfhf";
+let len=text.length;
+console.log(len);
+console.log(text.charAt(7));
+console.log(text[4]);
+console.log(text.at(2));
+console.log(text.slice(2,4));
+console.log(text.substring(2));
+let text1 = "Hello";
+let text2 = "World";
+let text3= "Parth1";
+console.log(text1.toUpperCase());
+console.log(text2.toLowerCase());
+console.log(text1.concat(text2,text3));
+
+let text4 = "Please locate where 'locate' occurs!";
+console.log(text4.indexOf("Please"));
+
+let n="10";
+let p=20;
+console.log(typeof(n+p));
+
+let date=new Date();
+console.log(typeof(date));
+
+
+
+
+let x="john";
+let y=new String("john");
+console.log(x==y);
+
+console.log(x===y);
+
+
+const bikes=["f1", "f2", "f3"];
+bikes[0]="f4";
+console.log(bikes);
+console.log(bikes.reverse());
+console.log(bikes.pop());
+console.log(bikes.push("f5"));
+console.log(bikes);
+console.log(bikes.toString());
+console.log(bikes.slice(1,3));
+
+console.log(Boolean(7!=8));
+
+if(7==8){
+   Greeting="mc";
+}
+
+else if(9==8){
+
+}
+else{
+   Greeting="c";
+}
+console.log(Greeting);
+
+
+let q = "0";
+switch (x) {
+  case 0:
+    text = "Off";
+    break;
+  case 1:
+    text = "On";
+    break;
+  default:
+    text = "No value found";
+}
+
+//if bith cases will not there then it will take the value always default
+
+const arr6=[20,20,300,40];
+const arr7=[];
+for(i=0;i<arr6.length;i++){
+    arr7.push(arr6[i]);
+    console.log(arr7);
+}
+
+
+// const person = {fname:"John", lname:"Doe", age:25};
+
+//let text = "";
+//for (let x in person) {
+  //text += person[x];
+//}
+// always in loop is consider in object 
+ let sets=(["a","b"]);
+ console.log(sets);
+console.log(sets.add("d"));
+console.log(sets);
+
+let maps=new Map();
+maps.set("part",100);
+maps.set("parth",200);
+console.log(maps);
+console.log(maps.get("part"));
+
+
+hello = function() {
+    return "Hello World!";
+  }
+
+  hello = ()=>{
+    return "hello world";
+  }
+
+  const person1 = {
+    firstName: "John",
+    lastName: "Doe",
+    language: "en",
+    get lang() {
+      return this.language.toUpperCase();
+    }
+  };
+  
+  // Display data from the object using a getter:
+console.log(person1.lang);
+
+
+const mc= function(a,b){
+    return(a*b);
+}
+console.log(mc(7,8));
+
+const myObject = {
+    firstName:"John",
+    lastName: "Doe",
+    fullName: function(){
+        return this.firstName+ ""+ this.lastName;
+    }
+}
+console.log(myObject.fullName());
+
+
+function myfunc(arg1,arg2){
+    this.firstName=arg1;
+    this.lastName=arg2;
+}
+const myObj = new myFunction("John", "Doe");
+console.log(myObj.firstName);
+
+
+const person12 = {
+    fullName: function() {
+      return this.firstName + " " + this.lastName;
+    }
+  }
+  const person14 = {
+    firstName:"John",
+    lastName: "Doe"
+  }
+  const person2 = {
+    firstName:"Mary",
+    lastName: "Doe"
+  }
+  
+  // This will return "Mary Doe"
+  console.log(person12.fullName.call(person2));
 
 
 
